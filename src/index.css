@@ -1,0 +1,232 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  --BGCLR1 : navy;
+  --BGCLR2 : lightblue;
+
+  --header-height: 3rem;
+  --nav-height: 3rem;
+  --footer-height: 2rem;
+}
+
+#root{
+  background-color: lightgray;
+}
+
+body{
+  width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+}
+
+
+
+header{
+  background-color: var(--BGCLR1);
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  width: 100%;
+  /* position: fixed; 
+  top: 0; */
+  z-index: 1;
+}
+
+nav {
+  background-color: var(--BGCLR2);
+  width: 100%;
+  /* position: fixed; 
+  top: 3rem;  */
+  z-index: 1; 
+}
+.searchForm label{
+  position: absolute;
+  left: -99999px;
+}
+
+.searchForm input{
+  padding: 0.8rem;
+  margin: 12px;
+  width: 80%;
+  margin-bottom: 0;
+}
+
+.searchForm input:focus{
+  outline: none;
+}
+
+.Nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  display: block;
+  padding: 1rem;
+}
+
+.Nav ul li{
+  display: block;
+  text-align: center;
+}
+
+.Nav ul{
+  list-style-type: none;
+  display: flex;
+}
+
+.Nav ul li a:hover{
+  background-color: whitesmoke;
+  color: black;
+}
+
+main {
+  /* margin-top: 10rem; */
+  /* margin-bottom: 4rem;  */
+  padding-bottom: 6rem;
+  overflow-x: hidden;
+  width: 100%;
+  overflow-y: auto; 
+  height: calc(100vh - 8rem); 
+}
+
+.feedPost{
+  padding: 0.4rem;
+  border-bottom: 1px solid #333;
+}
+
+.feedPost a{
+  text-decoration: none;
+  color: black;
+  padding: 0.2rem;
+}
+
+.post {
+  padding: 1rem;
+  margin: 12px;
+  background-color: rgb(228, 228, 228);
+}
+
+.deleteBtn,.editBtn{
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: coral;
+  border: none;
+  box-shadow: 4px 4px 2px black;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+
+.deleteBtn:active,.editBtn:active{
+  box-shadow: 0px 0px black;
+  transform: translate(4px,4px);
+}
+
+.dateTime{
+  padding: 0.5rem;
+}
+
+.postTitle{
+  padding: 0.5rem;
+}
+
+.postBody{
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.NewPost{
+  padding: 1rem;
+}
+
+.newPostForm{
+  display: flex;
+  flex-flow: column;
+  gap: 0.8rem;
+}
+
+.newPostForm label{
+  padding: 0.2rem;
+  font-size: 1.5rem;
+}
+
+.newPostForm input{
+  /* width: 80%; */
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.newPostForm textarea{
+  border: 2px solid black;
+  height: 50px;
+  padding: 0.5rem;
+}
+
+.newPostForm button{
+  height: 40px;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 2px 2px 4px black;
+  cursor: pointer;
+}
+
+.newPostForm button:active{
+  box-shadow: none;
+  transform: translate(2px,2px);
+}
+
+textarea{
+  min-height: 80px;
+}
+
+.editBtn{
+  background-color: var(--BGCLR2);
+  color: #333;
+}
+
+.About *{
+  padding: 1rem;
+}
+
+.About p{
+  font-size: 20px;
+}
+
+footer {
+  background-color: var(--BGCLR1);
+  text-align: center;
+  padding: 0.5rem;
+  color: white;
+  width: 100%;
+  position: sticky; 
+  bottom: 0;
+  z-index: 1; 
+}
+
+.Missing *{
+  padding: 1rem;
+}
+
+@media screen and (min-width:680px) {
+  .App{
+    width: 55%;
+    box-shadow: 4px 4px 4px black;
+  }
+
+  #root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "My 1st Post",
+      "datetime": "January 31,2025 8:44:58 PM",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequatur expedita, assumenda similique non optio! Modi nesciunt excepturi corrupti atque blanditiis quo nobis, non optio quae possimus illum exercitationem ipsa!"
+    },
+    {
+      "id": "31",
+      "title": "My 2nd Post",
+      "datetime": "January 31,2025 8:47:54 PM",
+      "body": "This is a second post that i am posting in this blog.\n"
+    },
+    {
+      "id": "311",
+      "title": "My 3rd Post",
+      "datetime": "January 31,2025 8:55:32 PM",
+      "body": "This is the third post that i am posting in this blog post web application. thanks! "
+    }
+  ]
+}
