@@ -1,7 +1,7 @@
 {
   "name": "router-project",
   "version": "0.1.0",
-  "homepage": "https://Lokhyasri-Gangireddi.github.io/react_router",
+  "homepage": "https://Lokhyasri-Gangireddi.github.io/react_deploy",
   "private": true,
   "dependencies": {
     "axios": "^1.7.9",

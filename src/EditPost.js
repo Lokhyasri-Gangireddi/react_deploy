@@ -10,7 +10,7 @@ const EditPost = ({posts,handleEdit,editBody,setEditBody,editTitle,setEditTitle}
             setEditTitle(post.title);
             setEditBody(post.body);
         }
-    },[post,setEditBody,setEditTitle])
+    },[post,setEditBody,setEditTitle]);
     return (
         <main className="NewPost">
             {editTitle && 
